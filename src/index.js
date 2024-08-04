@@ -7,7 +7,7 @@ const routes = {
   stable: {
     url: 'https://helm.camunda.io/',
     replaces: {
-      'charts.helm.sh': 'helm-camunda.wakaka0818.com',
+      'helm.camunda.io': 'helm-camunda.wakaka0818.com',
     },
   },
 }
