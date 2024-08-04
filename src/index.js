@@ -7,48 +7,8 @@ const routes = {
   stable: {
     url: 'https://helm.camunda.io/',
     replaces: {
-      'charts.helm.sh': '$host',
+      'charts.helm.sh': 'helm-camunda.wakaka0818.com',
     },
-  },
-  incubator: {
-    url: 'https://charts.helm.sh/incubator',
-    replaces: {
-      'charts.helm.sh': '$host',
-    },
-  },
-  grafana: {
-    url: 'https://grafana.github.io/helm-charts',
-    replaces: {
-      'github.com': 'hub.fastgit.org',
-    },
-  },
-  prometheus: {
-    url: 'https://prometheus-community.github.io/helm-charts',
-    replaces: {
-      'prometheus-community.github.io/helm-charts': '$host/prometheus',
-    },
-  },
-  'k8s-at-home': {
-    url: 'https://k8s-at-home.com/charts/',
-    replaces: {
-      'github.com': 'hub.fastgit.org',
-    },
-  },
-  self: {
-    url: 'https://ciiiii.github.io/helm-charts/',
-    replaces: {
-      'github.com': 'hub.fastgit.org',
-    },
-  },
-  argo: {
-    url: 'https://argoproj.github.io/argo-helm/',
-    replaces: {
-      'github.com': 'hub.fastgit.org',
-    },
-  },
-  cilium: {
-    url: 'https://helm.cilium.io/',
-    replaces: {},
   },
 }
 
