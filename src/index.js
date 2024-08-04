@@ -5,7 +5,7 @@ addEventListener('fetch', (event) => {
 
 const routes = {
   stable: {
-    url: 'https://charts.helm.sh/stable',
+    url: 'https://helm.camunda.io/',
     replaces: {
       'charts.helm.sh': '$host',
     },
@@ -57,7 +57,7 @@ async function handleRequest(event) {
     const request = event.request
     const url = new URL(request.url)
     const pathname = url.pathname
-    const p = pathname.split('/').filter((e) => e.length != 0)
+    const p = pathname.split('/').length > 0? pathname.split('/'):[pathname];  
     if (p.length > 0) {
       for (const [key, value] of Object.entries(routes)) {
         if (p[0] == key) {
